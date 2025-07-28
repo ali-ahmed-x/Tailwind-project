@@ -1,0 +1,25 @@
+.container{
+    background-image: url(img/header-illsutration-mobile@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    padding: 0pt 5% 0px 5%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#About {
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+
+}
+
+
+
