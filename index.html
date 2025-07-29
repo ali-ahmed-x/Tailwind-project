@@ -1,11 +1,64 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body class="" >
+
+<body>
+    <div><!--Wrapper-->
+        <nav class="flex justify-end bg-white p-4 text-base">
+            <div class="sm:hidden">
+                <button class="px-4 py-2"><img src="img/Icon - Menu.png" alt="menu"></button>
+            </div>
+            <div class="hidden sm:flex">
+                <ul class="flex align-items-center list-none m-0 p-0">
+                    <li class="inline-block mr-4"><a href="#" class="text-blue-500 hover:text-blue-700">Home</a></li>
+                    <li class="inline-block mr-4"><a href="#" class="text-blue-500 hover:text-blue-700">About</a></li>
+                    <li class="inline-block mr-4"><a href="#" class="text-blue-500 hover:text-blue-700">Services</a>
+                    </li>
+                    <li class="inline-block"><a href="#" class="text-blue-500 hover:text-blue-700">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section id="hero" class="container">
+                <h1 class="text-6xl font-bold p-6 pb-0">Hey there. <br>I'm Ali. <br>
+                    <span class="text-6xl text-green-500 font-bold p-6 pb-0">I'm a software<br> developer</h2>
+                    </span>
+                </h1>
+                <p class="flex justify-center text-3xl text-gray-700 mb-6 p-6">I can help you build a product , feature
+                    or website Look through some of my work and experience! If you like what you see and have a project
+                    you need coded,
+                    don’t hesitate to contact me.</p>
+                <div class="icon-row flex gap-5 h-32 ">
+                    <a href="#"><img src="img/icons/Vector.svg" alt="Icon 1"></a>
+                    <a href="#"><img src="img/icons/Linkedin icon.svg" alt="Icon 2"></a>
+                    <a href="#"><img src="img/icons/Vector (1).svg" alt="Icon 3"></a>
+                    <a href="#"><img src="img/icons/Vector (2).svg" alt="Icon 4"></a>
+                    <a href="#"><img src="img/icons/Vector (3).svg" alt="Icon 5"></a>
+
+                </div>
+            </section>
+<!-- 
+        
+
+            <section id="About" class="container mt-8">
+
+                <img src="img/illustration 1- about me-mobile.svg" alt="about image" class="w-32">
+
+                <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                <p class="text-gray-700 text-lg mb-4"> I can help you build a product , feature or website Look through
+                    some of my work and experience! If you like what you see and have a project you need coded,
+                    don’t hesitate to contact me</p>
+                <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-blue-600">Get my resume</button>
+            </section> -->
     <section class="flex items-center flex-col gap-5">
         <h2 class=" text-[40px] text-center text-[#172B4D] leading-[1.5]">My Recent <br>Works</h2>
         
@@ -87,6 +140,7 @@
            
         </div>
     </section>
-  
+      </main>
+  </div>
 </body>
 </html>
