@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Project</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <script>
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],       },
+    },
+  },
+};
+    </script>
 </head>
+
 
 <body>
     <div><!--Wrapper-->
@@ -17,48 +28,243 @@
             <div class="sm:hidden">
                 <button class="px-4 py-2"><img src="img/Icon - Menu.png" alt="menu"></button>
             </div>
+        </nav>
+        <nav class="flex justify-center">
             <div class="hidden sm:flex">
-                <ul class="flex align-items-center list-none m-0 p-0">
-                    <li class="inline-block mr-4"><a href="#" class="text-blue-500 hover:text-blue-700">Home</a></li>
-                    <li class="inline-block mr-4"><a href="#" class="text-blue-500 hover:text-blue-700">About</a></li>
-                    <li class="inline-block mr-4"><a href="#" class="text-blue-500 hover:text-blue-700">Services</a>
+                <ul class="list-none m-0 p-0">
+                    <li class="inline-block mr-4"><a href="#" class="text-gray-700 font-semibold hover:font-bold">Home</a></li>
+                    <li class="inline-block mr-4"><a href="#" class="text-gray-700 font-semibold hover:font-bold">About</a></li>
+                    <li class="inline-block mr-4"><a href="#" class="text-gray-700 font-semibold hover:font-bold">Services</a>
                     </li>
-                    <li class="inline-block"><a href="#" class="text-blue-500 hover:text-blue-700">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <main>
-            <section id="hero" class="container">
-                <h1 class="text-6xl font-bold p-6 pb-0">Hey there. <br>I'm Ali. <br>
-                    <span class="text-6xl text-green-500 font-bold p-6 pb-0">I'm a software<br> developer</h2>
+            <section id="hero" class="container font-inter">
+                <h1 class="text-6xl font-bold p-6 pb-0 text-gray-800">Hey there. I'm Ali. <br>
+                    <span class="text-6xl text-green-600 font-bold p-6 pb-0">I'm a software developer</h2>
                     </span>
                 </h1>
                 <p class="flex justify-center text-3xl text-gray-700 mb-6 p-6">I can help you build a product , feature
                     or website Look through some of my work and experience! If you like what you see and have a project
                     you need coded,
                     don’t hesitate to contact me.</p>
-                <div class="icon-row flex gap-5 h-32 ">
-                    <a href="#"><img src="img/icons/Vector.svg" alt="Icon 1"></a>
-                    <a href="#"><img src="img/icons/Linkedin icon.svg" alt="Icon 2"></a>
-                    <a href="#"><img src="img/icons/Vector (1).svg" alt="Icon 3"></a>
-                    <a href="#"><img src="img/icons/Vector (2).svg" alt="Icon 4"></a>
-                    <a href="#"><img src="img/icons/Vector (3).svg" alt="Icon 5"></a>
+                <div class="flex gap-7  ">
+                    <a href="#"><img class="h-7 hover:h-8" src="img/icons/Vector.svg" alt="Icon 1"></a>
+                    <a href="#"><img class="h-7 hover:h-8" src="img/icons/Linkedin icon.svg" alt="Icon 2"></a>
+                    <a href="#"><img class="h-7 hover:h-8" src="img/icons/Vector (1).svg" alt="Icon 3"></a>
+                    <a href="#"><img class="h-7 hover:h-8" src="img/icons/Vector (2).svg" alt="Icon 4"></a>
+                    <a href="#"><img class="h-7 hover:h-8" src="img/icons/Vector (3).svg" alt="Icon 5"></a>
 
                 </div>
             </section>
-<!-- 
-        
 
-            <section id="About" class="container mt-8">
+            <!--This is the added section-->
 
-                <img src="img/illustration 1- about me-mobile.svg" alt="about image" class="w-32">
+            <section class="flex items-center flex-col gap-5 ">
+                <h2 class=" text-[40px] text-center text-[#172B4D] leading-[1.5]">My Recent <br>Works</h2>
 
-                <h2 class="text-3xl font-bold mb-4">About Me</h2>
-                <p class="text-gray-700 text-lg mb-4"> I can help you build a product , feature or website Look through
-                    some of my work and experience! If you like what you see and have a project you need coded,
+                <div class="   w-20 h-1.5 rounded-4xl bg-[#36B37E]"></div>
+
+            </section>
+            <section class="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center ">
+
+                <div class=" max-w-xs  mx-10 text-center rounded-xl   overflow-hidden border-2 border-gray-200">
+                    <div class="h-48 bg-[#EBF0EE]  "></div>
+                    <span class="text-[24px] ">Multi-Post Stories <br> Gain+Glory</span>
+                    <div class=" flex justify-between mt-2 gap-2">
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            Ruby on Rails</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">CSS
+                        </div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            JavaScript</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            HTML</div>
+                    </div>
+                    <button class="bg-[#36B37F] text-[#FFFF] text-[17px] font-bold  rounded-sm px-4 py-2 my-4 ">See
+                        Project</button>
+
+                </div>
+                <div class=" max-w-xs  mx-10 text-center rounded-xl   overflow-hidden border-2 border-gray-200">
+                    <div class="h-48 bg-[#EBF0EE]  "></div>
+                    <span class="text-[24px] ">Multi-Post Stories <br> Gain+Glory</span>
+                    <div class=" flex justify-between mt-2 gap-2">
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            Ruby on Rails</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">CSS
+                        </div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            JavaScript</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            HTML</div>
+                    </div>
+                    <button class="bg-[#36B37F] text-[#FFFF] text-[17px] font-bold  rounded-sm px-4 py-2 my-4 ">See
+                        Project</button>
+
+                </div>
+                <div class=" max-w-xs  mx-10 text-center rounded-xl   overflow-hidden border-2 border-gray-200">
+                    <div class="h-48 bg-[#EBF0EE]  "></div>
+                    <span class="text-[24px] ">Multi-Post Stories <br> Gain+Glory</span>
+                    <div class=" flex justify-between mt-2 gap-2">
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            Ruby on Rails</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">CSS
+                        </div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            JavaScript</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            HTML</div>
+                    </div>
+                    <button class="bg-[#36B37F] text-[#FFFF] text-[17px] font-bold  rounded-sm px-4 py-2 my-4 ">See
+                        Project</button>
+
+                </div>
+                <div class=" max-w-xs  mx-10 text-center rounded-xl   overflow-hidden border-2 border-gray-200">
+                    <div class="h-48 bg-[#EBF0EE]  "></div>
+                    <span class="text-[24px] ">Multi-Post Stories <br> Gain+Glory</span>
+                    <div class=" flex justify-between mt-2 gap-2">
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            Ruby on Rails</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">CSS
+                        </div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            JavaScript</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            HTML</div>
+                    </div>
+                    <button class="bg-[#36B37F] text-[#FFFF] text-[17px] font-bold  rounded-sm px-4 py-2 my-4 ">See
+                        Project</button>
+
+                </div>
+                <div class=" max-w-xs  mx-10 text-center rounded-xl   overflow-hidden border-2 border-gray-200">
+                    <div class="h-48 bg-[#EBF0EE]  "></div>
+                    <span class="text-[24px] ">Multi-Post Stories <br> Gain+Glory</span>
+                    <div class=" flex justify-between mt-2 gap-2">
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            Ruby on Rails</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">CSS
+                        </div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            JavaScript</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            HTML</div>
+                    </div>
+                    <button class="bg-[#36B37F] text-[#FFFF] text-[17px] font-bold  rounded-sm px-4 py-2 my-4 ">See
+                        Project</button>
+
+                </div>
+                <div class=" max-w-xs  mx-10 text-center rounded-xl   overflow-hidden border-2 border-gray-200">
+                    <div class="h-48 bg-[#EBF0EE]  "></div>
+                    <span class="text-[24px] ">Multi-Post Stories <br> Gain+Glory</span>
+                    <div class=" flex justify-between mt-2 gap-2">
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            Ruby on Rails</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">CSS
+                        </div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            JavaScript</div>
+                        <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
+                            HTML</div>
+                    </div>
+                    <button class="bg-[#36B37F] text-[#FFFF] text-[17px] font-bold  rounded-sm px-4 py-2 my-4 ">See
+                        Project</button>
+
+                </div>
+            </section>
+
+            <!--About Section starts here-->
+
+
+            <section id="About" class="flex-column text-center p-8 mt-8 bg-right-top ">
+                <div class="bg-url[('img/illustration\ 1-\ about\ me-mobile.svg')]"></div>
+                <h2 class="text-6xl font-bold p-4 mb-4">About Me</h2>
+                <p class="text-gray-700 p-4 text-3xl mb-4"> I can help you build a product , feature or website Look
+                    through some of my work and experience! If you like what you see and have a project you need coded,
                     don’t hesitate to contact me</p>
+                <button class="bg-green-600 text-xl text-white rounded-lg px-4 py-4 hover:bg-green-900">Get my
+                    resume</button>
+
+
+                <div class="cards py-8 mt-2 ">
+                    <div class=" text-center rounded-xl border-4 my-8 border-gray-200">
+                        <div class="flex-col gap-2 h-[38vh] p-4 bg-[#EBF0EE] ">
+                            <div class="flex justify-center">
+                                <img class="h-40 w-40 mb-4 p-8 mt-8 bg-white rounded-full " src="img/Frame.svg"
+                                    alt="Languages">
+                            </div>
+                            <span class="text-3xl text-gray-700 font-semibold ">Languages</span>
+                            <div
+                                class=" flex justify-around mt-2 p-4 bg-[#EBF0EE] gap-2 rounded-lg text-md text-green-500 font-semibold mt-4 ">
+                                <div
+                                    class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2.5 ">
+                                    JavaScript</div>
+                                <div class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2 ">
+                                    Ruby</div>
+                                <div
+                                    class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2.5 ">
+                                    HTML</div>
+                                <div
+                                    class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2.5 ">
+                                    CSS</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" text-center rounded-xl border-4 my-8 border-gray-200">
+                        <div class="flex-col gap-2 h-[38vh] p-4 bg-[#EBF0EE] ">
+                            <div class="flex justify-center">
+                                <img class="h-40 w-40 mb-4 p-8 mt-8 bg-white rounded-full " src="img/Icon Name.svg"
+                                    alt="Languages">
+                            </div>
+                            <span class="text-3xl text-gray-700 font-semibold ">Frameworks</span>
+                            <div
+                                class=" flex justify-around mt-2 p-4 bg-[#EBF0EE] gap-2 rounded-lg text-md text-green-500 font-semibold mt-4 ">
+                                <div
+                                    class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2.5 ">
+                                    JavaScript</div>
+                                <div class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2 ">
+                                    Ruby</div>
+                                <div
+                                    class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2.5 ">
+                                    HTML</div>
+                                <div
+                                    class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2.5 ">
+                                    CSS</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" text-center rounded-xl my-8 border-4 border-gray-200">
+                        <div class="flex-col gap-2 h-[38vh] p-4 bg-[#EBF0EE] ">
+                            <div class="flex justify-center">
+                                <img class="h-40 w-40 mb-4 p-8 mt-8 bg-white rounded-full " src="img/icon thunder.svg"
+                                    alt="Languages">
+                            </div>
+                            <span class="text-3xl text-gray-700 font-semibold ">Skills</span>
+                            <div
+                                class=" flex justify-around mt-2 p-4 bg-[#EBF0EE] gap-2 rounded-lg text-md text-green-500 font-semibold mt-4 ">
+                                <div
+                                    class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2.5 ">
+                                    JavaScript</div>
+                                <div class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2 ">
+                                    Ruby</div>
+                                <div
+                                    class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2.5 ">
+                                    HTML</div>
+                                <div
+                                    class="bg-white gap-5 rounded-xl text-lg text-green-500 font-semibold px-4 py-2.5 ">
+                                    CSS</div>
+
+                            </div>
+                        </div>
+                    </div>
                 <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-blue-600">Get my resume</button>
-            </section> -->
+            </section>
+
+            
     <section class="flex items-center flex-col gap-5">
         <h2 class=" text-[40px] text-center text-[#172B4D] leading-[1.5]">My Recent <br>Works</h2>
         
@@ -101,7 +307,6 @@
                 <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">HTML</div>
             </div>
             <button class="bg-[#36B37F] text-[#FFFF] text-[17px] font-bold  rounded-sm px-4 py-2 my-4 ">See Project</button>
-           
         </div>
          <div class=" max-w-xs  mx-10 text-center rounded-xl   overflow-hidden border-2 border-gray-200">
             <div class="h-48 bg-[#EBF0EE]  "></div>
