@@ -1,3 +1,12 @@
+#About {
+    background-image: url(img/illustration\ 1-\ about\ me-mobile.svg);
+    background-size: contain;
+    /* background-image: url(img/bg-about.png); */
+    background-repeat: no-repeat;
+    height: 15vh;
+}
+
+
 .container{
     background-image: url(img/header-illsutration-mobile@2x.png);
     background-size: contain;
@@ -13,13 +22,6 @@
     text-align: center;
 }
 
-#About {
-    background-image: none;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 50vh;
-
-}
 
 
 
