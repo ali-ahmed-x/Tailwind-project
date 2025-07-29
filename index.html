@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <script src="script.js" ></script>
     <script>
 module.exports = {
   theme: {
@@ -26,7 +26,7 @@ module.exports = {
     <div><!--Wrapper-->
         <nav class="flex justify-end bg-white p-4 text-base">
             <div class="sm:hidden">
-                <button class="px-4 py-2"><img src="img/Icon - Menu.png" alt="menu"></button>
+                <button class="hamburger px-4 py-2"><img src="img/Icon - Menu.png" alt="menu"></button>
             </div>
         </nav>
         <nav class="flex justify-center">
@@ -176,17 +176,14 @@ module.exports = {
             <!--About Section starts here-->
 
 
-            <section id="About" class="flex-column text-center p-8 mt-8 bg-right-top ">
-                <div class="bg-url[('img/illustration\ 1-\ about\ me-mobile.svg')]"></div>
-                <h2 class="text-6xl font-bold p-4 mb-4">About Me</h2>
+            <section id="About" class="flex-column text-center p-8 mt-8 bg-[position:top_right, bottom_left]">
+                <h2 class="text-6xl font-inter text-gray-800 font-bold p-4 mb-4">About Me</h2>
                 <p class="text-gray-700 p-4 text-3xl mb-4"> I can help you build a product , feature or website Look
                     through some of my work and experience! If you like what you see and have a project you need coded,
                     don’t hesitate to contact me</p>
                 <button class="bg-green-600 text-xl text-white rounded-lg px-4 py-4 hover:bg-green-900">Get my
                     resume</button>
-
-
-                <div class="cards py-8 mt-2 ">
+                <card class="cards py-8 mt-2 ">
                     <div class=" text-center rounded-xl border-4 my-8 border-gray-200">
                         <div class="flex-col gap-2 h-[38vh] p-4 bg-[#EBF0EE] ">
                             <div class="flex justify-center">
@@ -261,9 +258,7 @@ module.exports = {
                             </div>
                         </div>
                     </div>
-
-
-                </div>
+                </card> 
             </section>
 
 
