@@ -1,3 +1,11 @@
+#About {
+    background-image: url(img/illustration\ 1-\ about\ me-mobile.svg),url(img/bg-about.png);
+    background-size: 15%, 55%;
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+}
+
+
 .container{
     background-image: url(img/header-illsutration-mobile@2x.png);
     background-size: contain;
