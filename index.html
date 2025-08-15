@@ -17,6 +17,8 @@
 </head>
 
 <body>
+     
+   
     <div><!--Wrapper-->
         <nav class="flex justify-end bg-white p-4 text-base">
             <div class="sm:hidden">
@@ -86,10 +88,11 @@
                         <div class="bg-[#EBF0EE]  rounded-sm text-[12px] text-[#3A4A42] font-semibold px-3 py-1.5  ">
                             HTML</div>
                     </div>
-                    <button class="bg-[#36B37F] text-[#FFFF] text-[17px] font-bold  rounded-sm px-4 py-2 my-4 ">See
+                    <button id="projectBtn" class="bg-[#36B37F] text-[#FFFF] text-[17px] font-bold  rounded-sm px-4 py-2 my-4 ">See
                         Project</button>
 
                 </div>
+                
                 <div
                     class=" max-w-xs lg:max-w-sm w-full  text-center rounded-xl   overflow-hidden border-2 border-gray-200">
                     <div class="h-48 bg-[#EBF0EE]  "></div>
@@ -303,19 +306,22 @@
                             I'm always interested in hearing about new projects, so if you'd like to chat please get in
                             touch.</p>
 
-                        <form
+                        <form  id="contactForm"
                             class=" px-4 my-10 w-sm flex flex-col items-center lg:items-start gap-4 lg:w-[684px] lg:h-[330px] ">
-                            <input class="border border-gray-300 rounded px-4 py-2 w-full  " type="text"
-                                placeholder="Full name" required minlength="3" pattern="[A-Za-z\s]+" />
-                            <input class="border border-gray-300 rounded px-4 py-2 w-full " type="email"
+                            <input id="name" class="border border-gray-300 rounded px-4 py-2 w-full  " type="text"
+                                placeholder="Full name"  pattern="[A-Za-z\s]+" />
+                            <p id="nameError" style="color:red;"></p>
+                            <input id="email" class="border border-gray-300 rounded px-4 py-2 w-full " type="text"
                                 placeholder="Email address" required />
-                            <textarea class="border border-[#60C095] rounded px-4 py-2 w-full h-24  "
+                            <p id="emailError" style="color:red;"></p>
+                            <textarea id="message" class="border border-[#60C095] rounded px-4 py-2 w-full h-24  "
                                 placeholder="Hey I’d like to connect to..." required></textarea>
-                            <button
+                            <button type="submit"
                                 class="bg-[#36B37F] w-35 text-base text-white font-medium py-3 rounded  hover:bg-[#2f9c6c] transition">
                                 Get in touch
                             </button>
                         </form>
+                        
                     </div>
                     <span class=" md:hidden text-[20px] font-medium leading-1.5  ">ahmad@gmail.com</span>
 
@@ -337,8 +343,57 @@
             </div>
 
 
+
+
+                         <!-- pOPuP cODE  -->
+
+            <div id="popUp" class="fixed hidden z-20  inset-0 bg-black/15 flex items-center justify-center overflow-auto">
+        <div class="relative mt-10 max-w-xs bg-white rounded-xl shadow-lg overflow-auto max-h-[90vh] border border-gray-200">
+        <!-- Image with close button -->
+        <div class="relative flex justify-center">
+        <img src="assets/projectpic.jpg" alt="Banner" class="w-[90%] rounded-xl mt-5 h-50 bg-contain" />
+        <button id="close-btn" class="absolute top-8 right-9 text-white font-bold hover:text-black">
+            ✕
+        </button>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4">
+        <h2 class="text-[32px] text-[#172B4D] font-semibold mb-2">
+            Keeping track of hundreds of components
+        </h2>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-[#EBF0EE] text-gray-700 text-xs px-2 py-2 rounded">Ruby on Rails</span>
+            <span class="bg-[#EBF0EE] text-gray-700 text-xs px-2 py-2 rounded">CSS</span>
+            <span class="bg-[#EBF0EE] text-gray-700 text-xs px-2 py-2 rounded">JavaScript</span>
+        </div>
+
+        <!-- Description -->
+        <p class="text-[16px] text-[#344563] mb-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text...
+        </p>
+        <p class="text-[16px] text-[#344563] mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex gap-2">
+            <button class="flex-1 bg-[#36B37F] text-white text-sm px-3 py-4 rounded hover:bg-green-600">See live</button>
+            <button class="flex-1 bg-[#36B37F] text-white text-sm px-3 py-4 rounded hover:bg-green-600">See source</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
         </main>
     </div>
+
 </body>
 
+<script src="script.js" ></script>
 </html>
